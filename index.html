@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>DSC Winter Of Code</title>
-  <link rel="icon" type="image/png" href="https://i.imgur.com/VhT9YEf.png">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="Index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="index1.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="Index.css" type="text/css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbarTogglerDemo03">
   <!--Nav Section--->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand logo-image" href="https://www.dscnsec.com">
+    <a class="navbar-brand logo-image" href="#home">
       <div class="logo-image">
         <img src="https://i.imgur.com/nsqTRBG.png" class="img-fluid">
       </div>
@@ -29,9 +27,6 @@
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="nav justify-content-end navbar-nav ml-auto ">
-          <li class="nav-item">
-              <a class="nav-link " href="index.html">Home</a>
-            </li>
         <li class="nav-item">
           <a class="nav-link" href="#about">About Us</a>
         </li>
@@ -39,10 +34,7 @@
           <a class="nav-link " href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="#works">How It Works</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#timeline">Timeline</a>
+          <a class="nav-link " href="#work">How It Works</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact Us</a>
@@ -51,102 +43,98 @@
     </div>
   </nav>
 
-  <!--Home Section--->
-  <div class="container" id="home">
-    <div class="row d-flex justify-content-around">
-      <div class="col-lg-6 col-sm-12 col-md-12">
+  <div class="jumbotron home-menu" id="home">
+    <div class="row">
+      <div class="col-lg-6">
         <div class="desc">
           <div>
-            <h3>DSC Winter of Code' 19</h3><br>
+            <h3>DSC Winter of Code'19</h3><br>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo nulla voluptatum ad tempore voluptatibus
               est ab libero architecto molestiae, iste cum cumque iure delectus voluptatem corporis. Non quae eveniet
               vel?</p>
           </div>
         </div>
       </div>
-      <div class="col-lg-6 col-sm-12 col-md-12">
+      <div class="col-lg-6">
         <div class="got">
-          <img src="https://i.imgur.com/iX4dTY2.png" alt="">
+          <img src="https://i.imgur.com/iX4dTY2.png" class="img-fluid">
         </div>
       </div>
     </div>
   </div>
+
   <!--About Section--->
-  <div class="container container-fluid" id="about" align="center">
-    <div class="container" id="aboutContent">
-      <h1 class="display-6 projectsHeading">About Us</h1>
-      <div class="row d-flex justify-content-around">
-        <div class="col-lg-4 col-sm-12 col-md-12">
-          <img src="https://i.imgur.com/VhT9YEf.png" alt="DSC logo" class="aboutLogo img-fluid">
-        </div>
-        <div class="col-lg-8 col-sm-12 col-md-12" id="aboutText">
-          <p>The DSC NSEC Winter of Code is a program aimed
+  <div class="about-main">
+    <div class="jumbotron-fluid" id="about">
+      <div class="container" id="aboutContent">
+        <h1 class="display-6">About Us</h1>
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 col-md-12 about-img">
+            <img src="https://i.imgur.com/VhT9YEf.png" alt="DSC logo" class="aboutLogo img-fluid">
+          </div>
+          <div class="col-lg-8 col-sm-12 col-md-12" id="aboutText">
+            The DSC NSEC Winter of Code is a program aimed
             to increase participation for the Google Summer of
             Code program among members of DSC NSEC.
-          </p>
+          </div>
         </div>
+        <div class="aboutBttn"><button type="button" class="abtBttn"><a href="https://dscnsec.com" target="_blank">Know
+              more</a></button></div>
       </div>
     </div>
   </div>
 
-  <!---Projects Section-->
   <div class="jumbotron-fluid" id="projects">
-    <div class="container" align="center">
-      <h1 class="display-6 projectsHeading">PROJECTS</h1>
-      <div class="row projectsRow1">
-        <div class="col-lg-4 col-sm-12 col-md-12">
-          <img src="https://i.imgur.com/VhT9YEf.png" class="img-fluid " alt="projects Logo">
+    <div class="decImg1"><img src='https://i.imgur.com/EOYzzwE.png' id="setImg"></div>
+    <div class="container">
+      <h1 class="display-6" style="text-align: center" id="projectHeader">Projects</h1>
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-fluid" src='https://i.imgur.com/VhT9YEf.png'>
         </div>
-        <div class="col-lg-8 col-sm-12 col-md-12 projectsText">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+        <div class="col-lg-8" id="project-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum.</div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" id="project-text-mb">
+          <img class="img-fluid" src='https://i.imgur.com/VhT9YEf.png'>
+        </div>
+
+        <div class="col-lg-8" id="project-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum.</div>
+
+        <div class="col-lg-4" id="project-text-sm">
+          <img class="img-fluid" src='https://i.imgur.com/VhT9YEf.png'>
         </div>
       </div>
 
-      <div class="row projectsRow">
-
-        <div class="col-lg-8 col-md-12 col-sm-12 projectsText">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-fluid" src='https://i.imgur.com/VhT9YEf.png'>
         </div>
 
-        <div class="col-lg-4 col-sm-12 col-md-12">
-          <img src="https://i.imgur.com/VhT9YEf.png" class="img-fluid " alt="projects Logo">
-        </div>
-      </div>
+        <div class="col-lg-8" id="project-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum.</div>
 
-      <div class="row projectsRow">
-        <div class="col-lg-4 col-sm-12 col-md-12">
-          <img src="https://i.imgur.com/VhT9YEf.png" class="img-fluid " alt="projects Logo">
-        </div>
 
-        <div class="col-lg-8 col-sm-12 col-md-12 projectsText">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
       </div>
     </div>
+    <div class="decImg"><img src='https://i.imgur.com/jXSj5Ru.png' id="leaf"></div>
   </div>
 
+  <!--How It Works-->
 
-
-  <div class="container container-fluid" id="works" align="center">
+  <div class="container-fluid" id="work" align="center">
     <div class="container" id="aboutContent">
       <h1 class="display-6 worksheading">How It Works</h1>
       <p class="hwork">
@@ -156,126 +144,134 @@
     </div>
 
     <div class="row">
-        <div class="card-group">
-          <div class="col-lg-4">
-              <div class="card">
-                  <img class="card-img-top" src="https://i.imgur.com/SpkFOja.png" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Cloud Study Jam</h5>
-                    <a href="https://www.meetup.com/Google-Developer-Group-Cloud-Kolkata/events/258893773/" class="btn btn-primary">Know More</a>
-                  </div>
-                </div>
-          </div>
-          <div class="col-lg-4">
-              <div class="card">
-                  <img class="card-img-top" src="https://i.imgur.com/9ln3rnp.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Intro to ML</h5>           
-                    <a href="https://www.youtube.com/results?search_query=dsc+nsec" class="btn btn-primary">Know More</a>
-                  </div>
-                </div>
-          </div>
-          <div class="col-lg-4">
-              <div class="card">
-                  <img class="card-img-top" src="https://i.imgur.com/WfqDrfA.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">GDG DevFest '19</h5>          
-                    <a href="https://devfest.gdgkolkata.org" class="btn btn-primary">Know More</a>
-                  </div>
-                </div>
+      <div class="card-group">
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="https://i.imgur.com/SpkFOja.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Cloud Study Jam</h5>
+              <a href="https://www.meetup.com/Google-Developer-Group-Cloud-Kolkata/events/258893773/"
+                class="btn btn-primary abtBttn1">Know More</a>
+            </div>
           </div>
         </div>
-      </div>      
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="https://i.imgur.com/9ln3rnp.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Intro to ML</h5>
+              <a href="https://www.youtube.com/results?search_query=dsc+nsec" class="btn btn-primary abtBttn1">Know
+                More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 devfest">
+          <div class="card">
+            <img class="card-img-top" src="https://i.imgur.com/WfqDrfA.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">GDG DevFest'19</h5>
+              <a href="https://devfest.gdgkolkata.org" class="btn btn-primary abtBttn1">Know More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
   <!-- Timeline Section -->
 
-<section id="timeline">
-  <div id="timelinehead">
+  <section id="timeline">
+    <div id="timelinehead">
       <h1 class="display-6" align="center">Road Map</h1>
-  </div><br>
+    </div><br>
     <div class="container timeline">
-        <ul class="timeline">
-          <li>
-            <div class="timeline-badge primary">
+      <ul class="timeline">
+        <li>
+          <div class="timeline-badge primary">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h5 class="timeline-title">ABC</h5>
             </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h5 class="timeline-title">ABC</h5>
-              </div>
-              <div class="timeline-body">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, minus repellendus corporis rerum explicabo officia tempore </p>
-              </div>
+            <div class="timeline-body">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, minus repellendus corporis rerum
+                explicabo officia tempore </p>
             </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-badge success">
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge success">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h5 class="timeline-title">ABHGVHGFDDR</h5>
             </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h5 class="timeline-title">ABHGVHGFDDR</h5>
-              </div>
-              <div class="timeline-body">
-                <p>Lorem ipsum ste vitae quisquam! Aut possimus temporibus magni autem non nulla placeat architecto dolores, veritatis dolor sequi nobis.</p>
-              </div>
+            <div class="timeline-body">
+              <p>Lorem ipsum ste vitae quisquam! Aut possimus temporibus magni autem non nulla placeat architecto
+                dolores, veritatis dolor sequi nobis.</p>
             </div>
-          </li>
-          <li>
-            <div class="timeline-badge danger">
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge danger">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h5 class="timeline-title">AIUGUTRFTYDGFC</h5>
             </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h5 class="timeline-title">AIUGUTRFTYDGFC</h5>
-              </div>
-              <div class="timeline-body">
-                <p>Lorem ipsum dolor, sit Lorem, ipsum dolor sit quidem fuga eos non. Ex, debitis itaque veritatis hic maiores dolore excepturi fugit est error provident quasi. Nam! aut ad!</p>
-              </div>
+            <div class="timeline-body">
+              <p>Lorem ipsum dolor, sit Lorem, ipsum dolor sit quidem fuga eos non. Ex, debitis itaque veritatis hic
+                maiores dolore excepturi fugit est error provident quasi. Nam! aut ad!</p>
             </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-badge warning">
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h5 class="timeline-title">IGUYFDSRSADCV</h5>
             </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h5 class="timeline-title">IGUYFDSRSADCV</h5>
-              </div>
-              <div class="timeline-body">
-                <p>Lorem ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quo aut quisquam ad consequatur architecto a, qui doloremque possimus cum sit distinctio fugiat voluptatem ducimus recusandae non totam? Officiis, libero! dolor sit amet consectetur adipisicas omnis incidunt obcaecati quae molestiae eveniet veritatis accusamus modi a, ipsa totam!</p>
-              </div>
+            <div class="timeline-body">
+              <p>Lorem ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quo aut quisquam ad
+                consequatur architecto a, qui doloremque possimus cum sit distinctio fugiat voluptatem ducimus
+                recusandae non totam? Officiis, libero! dolor sit amet consectetur adipisicas omnis incidunt obcaecati
+                quae molestiae eveniet veritatis accusamus modi a, ipsa totam!</p>
             </div>
-          </li>
-          <li>
-            <div class="timeline-badge info">
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge info">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h5 class="timeline-title">WUGFDTYJKl</h5>
             </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h5 class="timeline-title">WUGFDTYJKl</h5>
-              </div>
-              <div class="timeline-body">
-                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totamborum quo vel soluta eum quibusdam! approval was initiated.</p>
-              </div>
+            <div class="timeline-body">
+              <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totamborum quo vel soluta eum quibusdam!
+                approval was initiated.</p>
             </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-badge success">
-              </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h5 class="timeline-title">VHGUTYDFGVUILd</h5>
-              </div>
-              <div class="timeline-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure vearum sunt! Cum molestias hic rem?</p>
-              </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge success">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h5 class="timeline-title">VHGUTYDFGVUILd</h5>
             </div>
-          </li>
-        </ul>
-      </div>
+            <div class="timeline-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure vearum sunt! Cum molestias hic rem?
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
 
-</section>
+  </section>
 
-
-  
 
   <div class="jumbotron container" align="center" id="contact">
     <h1 class="display-6">Contact Us</h1><br>
@@ -312,11 +308,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

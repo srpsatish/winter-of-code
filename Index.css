@@ -19,13 +19,14 @@
     width: 100%; 
  }
 .got img {
-    width: 100%;
-    margin-top: 120px;
+    width: 600px;
+    height: auto;
+    margin-top: 50px;
     border-radius: 50px;
 }
 .desc h3 {
-    color: #9e9e9e;
-    margin-top: 120px;
+    color: #443c62;
+    margin-top: 100px;
     visibility: visible;
     font-size: 40px;
     line-height: 60px;
@@ -39,9 +40,14 @@
     margin-top: 50px;
     line-height: 30px;
     font-size: 18px;
+    letter-spacing: 1px;
 }
 .jumbotron{
     background-color: rgba(250,250,250);
+}
+
+.home-menu{
+   margin-bottom: 40px;
 }
 .jumbotron h5{
     color: #8488c0; 
@@ -49,78 +55,47 @@
 .jumbotron h4{
     color: #443c62;
 }
-.container h1{
+.jumbotron h1{
     color: #556bff;
 }
-#about{
-    background-color: rgba(250,250,250);
-    background-repeat: no-repeat;
+
+#home{
     width: 100%;
 }
 
-#aboutContent p{
-    padding-top: 50px;
-    color: #8488c0;
-}
-
-#aboutText{
-    padding: 55px;
-    font-family: Roboto,"Helvetica Neue",sans-serif;
-    font-size: 20px;
-    line-height: 1.8;
-    letter-spacing: 2px;
-    color: white;
-}
-
-
-.aboutLogo{
-    width: 400px;
-    height: auto;
+.location{
     margin-top: 30px;
 }
 
-#projects{
-    background-color: rgb(250,250,250);
-    
-}
-
-.projectsRow1{
-    padding: 50px;
-}
-
-.projectsRow{
-    padding: 30px;
-}
-
-.projectsText p{
-    padding: 30px;
-     font-family: Roboto,"Helvetica Neue",sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    letter-spacing: 0.8px;
-    color: #8488c0;
-}
-
-}
-
-.projectsHeading{
-    text-align: center;
-    color: #556bff;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-top: 50px;
-}
-
-.location{
-    margin-top: 100px;
-}
 .frame{
-    box-shadow: 1px 1px 1px #888;
+    box-shadow: 2px 2px 2px #888;
     border-radius: 20px;
+    width: 100%;
+}
+
+#contact h1{
+    text-transform: uppercase;
+    font-weight: 350px;
+}
+
+#contact .container{
+    padding-top: 120px;
+    font-size: 
+}
+
+.contact-sec{
+    padding-top: 50px;
+    padding-bottom: 120px;
 }
 .card {
     margin-top: 50px;
 }
+
+#work h1{
+    text-transform: uppercase;
+    font-weight: 350px;
+}
+
 .hwork{
     padding: 30px;
     font-family: Roboto,"Helvetica Neue",sans-serif;
@@ -273,3 +248,4 @@
   .timeline-body > p + p {
     margin-top: 5px;
   }
+
